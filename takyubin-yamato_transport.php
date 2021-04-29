@@ -31,7 +31,7 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
                  */
 				public function __construct() {
 					$this->id = 'maisgeeks_takyubin'; 
-					$this->method_title = __( 'TA-Q-BIN - Yamato Transport Shipping', 'maisgeeks_takyubin' );  
+					$this->method_title = __( 'TA-Q-BIN - Yamato Transport', 'maisgeeks_takyubin' );  
 					$this->method_description = __( 'Custom Shipping Method for Yamato Transport (TA-Q-BIN)', 'maisgeeks_takyubin' ); 
 
                     // Availability & Countries
@@ -43,7 +43,7 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
 					$this->init();
 
 					$this->enabled = isset( $this->settings['enabled'] ) ? $this->settings['enabled'] : 'yes';
-					$this->title = isset( $this->settings['title'] ) ? $this->settings['title'] : __( 'TA-Q-BIN - Yamato Transport Shipping', 'maisgeeks_takyubin' );
+					$this->title = isset( $this->settings['title'] ) ? $this->settings['title'] : __( 'TA-Q-BIN - Yamato Transport', 'maisgeeks_takyubin' );
 				}
 
 				/**
@@ -78,7 +78,7 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
 							'title' 		=> __( 'Title', 'maisgeeks_takyubin' ),
 							'type' 			=> 'text',
 							'description' 	=> __( 'Title to be display on site', 'maisgeeks_takyubin' ),
-							'default' 		=> __( 'TA-Q-BIN - Yamato Transport Shipping', 'maisgeeks_takyubin' )
+							'default' 		=> __( 'TA-Q-BIN - Yamato Transport', 'maisgeeks_takyubin' )
 						),
 						'hokkaido_price_01' => array(
 							'title'			=> __( 'Hokkaido', 'maisgeeks_takyubin' ) . ' ' . __( 'Rate', 'maisgeeks_takyubin' ) . ' - ' . __( 'Size 60', 'maisgeeks_takyubin' ),
@@ -719,7 +719,7 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
 								'key'		=> 'value'
 							)
 						),
-						'chugoku_price_06' => array(
+						'okinawa_price_06' => array(
 							'title'			=> __( 'Okinawa', 'maisgeeks_takyubin' ) . ' ' . __( 'Rate', 'maisgeeks_takyubin' ) . ' - ' . __( 'Size 160', 'maisgeeks_takyubin' ),
 							'type'			=> 'price',
 							'description'	=> __( 'Okinawa', 'maisgeeks_takyubin' ) . ' ' . __( '(up to 160 cm & up to 25 kg)', 'maisgeeks_takyubin' ),
